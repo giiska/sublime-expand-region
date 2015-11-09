@@ -3,7 +3,6 @@ try:
   import expand_to_word
   import expand_to_quotes
   import expand_to_xml_node
-  import expand_to_word_unit
   import utils
 except:
   from . import expand_to_word
