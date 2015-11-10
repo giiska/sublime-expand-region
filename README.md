@@ -1,5 +1,18 @@
 [![Build Status](https://travis-ci.org/aronwoost/sublime-expand-region.png?branch=master)](https://travis-ci.org/aronwoost/sublime-expand-region)
 
+# 让 Sublime Text 像 Webstorm 一样智能扩展选区（可快速选择 html 里面的 BEM 类名）
+
+功能直接看图：
+
+![Image of demo](http://7d9j0e.com1.z0.glb.clouddn.com/images/sublime-plugin-expand-selection-region-like-webstorm/1.gif)
+
+
+# 缘由
+
+上上个月找到这款 Sublime 插件：https://github.com/aronwoost/sublime-expand-region ，很可惜它忽略了引号中的空格。前端或重构用 BEM 的时候，html 总会有比较长的 `className-className__className-className_className`。既然找不到更好的替代品，我就 fork 了一下它的代码，增加这段功能。
+
+
+
 # ExpandRegion for Sublime Text
 
 ### Like "Expand Selection to Scope". But better!
