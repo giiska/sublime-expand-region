@@ -5,7 +5,7 @@ try:
 except:
   from . import utils
 
-def expand_space_in_quotes(result):
+def expand_to_space_in_quotes(result, string, start, end):
   # If there is a space in the quotes string
   # TODO: should return when current selection contains a space
   quotes_string = result['string']

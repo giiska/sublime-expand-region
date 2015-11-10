@@ -9,7 +9,7 @@ except:
 
 def expand(string, start, end, extension="", settings=None):
 
-  if(re.compile("html|htm|xml").search(extension)):
+  if(re.compile("html|ejs|php|htm|xml").search(extension)):
     result = html.expand(string, start, end)
   else:
     result = javascript.expand(string, start, end)

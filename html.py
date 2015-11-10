@@ -28,7 +28,7 @@ def expand(string, start, end):
   if result:
 
     # Check if there is space in quotes
-    space_in_quotes_result = expand_space_in_quotes(result)
+    space_in_quotes_result = expand_to_space_in_quotes.expand_to_space_in_quotes(result, string, start, end)
     if space_in_quotes_result:
       expand_stack.append("quotes_and_space")
       return space_in_quotes_result
