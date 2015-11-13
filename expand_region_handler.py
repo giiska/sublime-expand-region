@@ -3,14 +3,21 @@ import re, hashlib, json
 try:
   import javascript
   import html
+  import css
 except:
   from . import javascript
   from . import html
+  from . import css
 
 def expand(string, start, end, extension="", settings=None):
 
   if(re.compile("html|ejs|php|htm|xml").search(extension)):
     result = html.expand(string, start, end)
+  elif(re.compile("css|less|scss").search(extension)):
+    result = css.expand(string, start, end)
+    # No match seletor
+    if result == None:
+      result = javascript.expand(string, start, end)
   else:
     result = javascript.expand(string, start, end)
 
