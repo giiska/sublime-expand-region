@@ -22,7 +22,7 @@ def expand(string, start, end):
     result["expand_stack"] = expand_stack
     return result
 
-  expand_stack.append("quotes")
+  expand_stack.append("expand_to_css_selector")
 
   if utils.selection_contain_linebreaks(string, start, end) == False:
     result = expand_to_css_selector.expand_to_css_selector(string, start, end)
