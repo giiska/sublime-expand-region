@@ -1,6 +1,6 @@
 [
   {
-    "caption": "sublime-expand-region",
+    "caption": "Expand Region",
     "command": "expand_region"
   }
 ]

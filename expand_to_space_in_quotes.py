@@ -17,23 +17,23 @@ def expand_to_space_in_quotes(result, string, start, end):
   for matched_space in res:
     space_start = matched_space.start() + result['start']
     space_end = matched_space.end() + result['start']
-    print space_start, space_end
+    print(space_start, space_end)
 
     if(end == space_start and start == result['start']):
-      print 'space end and quote start'
+      print('space end and quote start')
       space_break = True
       break
     if(start == space_end and end == result['end']):
-      print 'space start and quote end'
+      print('space start and quote end')
       space_break = True
       break
     # todo: maybe this can be simplified
     if((start == space_end and end == space_start_result) or (start == space_end_result and end == space_start_result) or (start == space_end_result and end == space_start)):
-      print 'space start and space end'
+      print('space start and space end')
       space_break = True
       break
     if(start == result['start'] and end == result['end']):
-      print 'quote start and quote end'
+      print('quote start and quote end')
       space_break = True
       break
 
